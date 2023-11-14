@@ -1,0 +1,1 @@
+export const ipfs = 'https://api.pinata.cloud';
