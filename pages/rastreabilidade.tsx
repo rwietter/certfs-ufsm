@@ -22,13 +22,11 @@ export default function Page(): JSX.Element {
     })()
   }, [contract]);
 
-  console.log("Events", events)
-
   return (
     <Layout>
       <Header />
       <Menu />
-      <section className="grid grid-cols-fill500 mt-8 gap-4 m-auto max-w-7xl pt-6">
+      <section className="grid grid-cols-fill500 mt-8 gap-4 m-auto max-w-7xl pt-6 pb-8">
         {events.map((event, index: number) => {
           if (event.eventName === 'CertificateIssued') {
             return (
